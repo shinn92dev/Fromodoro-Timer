@@ -1,12 +1,15 @@
 import "./input.css";
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
     return (
         <div className="App">
-            <h1 className="">Fromodoro Timer</h1>
-            <h1 className="text-3xl font-bold text-red-500">Hello world!</h1>
+            <div className="mx-2">
+                <Header />
+                <main></main>
+            </div>
         </div>
     );
-}
+};
 
 export default App;
