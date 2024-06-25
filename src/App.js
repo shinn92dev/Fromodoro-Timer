@@ -1,7 +1,8 @@
 import "./input.css";
 import Header from "./components/Header";
 import TopBtnBox from "./components/TopBtnBox";
-import Timer from "./components/common/Timer";
+import Timer from "./components/Timer";
+import Frog from "./components/Frog";
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
                 <main>
                     <TopBtnBox />
                     <Timer />
+                    <Frog />
                 </main>
             </div>
         </div>
