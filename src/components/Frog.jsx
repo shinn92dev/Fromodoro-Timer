@@ -19,6 +19,10 @@ const Frog = () => {
             setIsFrogExist(true);
         }
     };
+    const deleteCurrentFrog = () => {
+        window.localStorage.removeItem("frog");
+        setIsFrogExist(false);
+    };
     const handleInputFrogSubmit = (event) => {
         event.preventDefault();
         const date = new Date().toLocaleDateString();
@@ -70,10 +74,10 @@ const Frog = () => {
             >
                 <span>{inputFrog}</span>
                 <div className="flex items-center">
-                    <button>
+                    <button className="mr-1">
                         <FrogDoneIcon />
                     </button>
-                    <button>
+                    <button onClick={deleteCurrentFrog}>
                         <FrogCancelIcon />
                     </button>
                 </div>
