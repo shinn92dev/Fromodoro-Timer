@@ -1,7 +1,7 @@
 const TopBtn = ({ text, onClick }) => {
     return (
         <button
-            className="py-2 px-4 my-5 font-bold bg-btn-green rounded-lg text-white text-lg"
+            className="py-1 px-3 my-5 font-bold bg-btn-green rounded-lg text-white text-lg w-28 text-center"
             onClick={onClick}
         >
             {text}
