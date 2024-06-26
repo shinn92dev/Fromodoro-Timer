@@ -38,7 +38,7 @@ const Timer = ({ totalMinute }) => {
             ctx.fill();
         };
 
-        drawCircle("red", elapsed / totalTime);
+        drawCircle("#388E3C", elapsed / totalTime);
 
         if (isRunning) {
             timerRef.current = setInterval(() => {
