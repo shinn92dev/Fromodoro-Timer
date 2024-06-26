@@ -1,9 +1,6 @@
 import TopBtn from "./common/TopBtn";
 
-const TopBtnBox = () => {
-    const onClick = () => {
-        console.log("Top Btn Clicked");
-    };
+const TopBtnBox = ({ onClick }) => {
     return (
         <div className="flex justify-around">
             <TopBtn text={"🐸 Frog"} onClick={onClick} />

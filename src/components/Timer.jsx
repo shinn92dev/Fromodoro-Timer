@@ -1,14 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 
-const Timer = () => {
+const Timer = ({ totalMinute }) => {
     const containerRef = useRef(null);
     const canvasRef = useRef(null);
-    const totalTime = 25 * 60;
+    const totalTime = totalMinute * 60;
     const [elapsed, setElapsed] = useState(0);
     const [timeLeft, setTimeLeft] = useState(totalTime);
     const [isRunning, setIsRunning] = useState(false);
     const timerRef = useRef(null);
-
+    useEffect(() => {
+        setTimeLeft(totalMinute * 60);
+        setElapsed(0);
+    }, [totalMinute]);
     useEffect(() => {
         const canvas = canvasRef.current;
         const container = containerRef.current;
