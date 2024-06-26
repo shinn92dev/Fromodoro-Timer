@@ -38,24 +38,24 @@ const Frog = () => {
         <div className="flex flex-col items-center ">
             <h2 className="mx-5 pb-1 font-black text-xl self-start">FROG</h2>
             <div
-                className={`w-11/12 mx-5 mt-2 py-3 flex justify-center bg-light-green rounded-lg items-center cursor-pointer shadow-lg ${
+                className={`w-11/12 mx-5 mt-2 py-3 flex justify-center bg-light-green rounded-lg items-center cursor-pointer shadow-lg text-light-black ${
                     isAddFrogClicked || isFrogExist ? "hidden" : ""
                 }`}
                 onClick={handleAddFrogClick}
             >
                 <AdditionIcon />
-                <span className="font-black text-xl text-center ml-2">
+                <span className="text-xl text-center font-black ml-2">
                     Add Frog
                 </span>
             </div>
             <form
-                className={`w-11/12 mx-5 mt-2 flex items-center bg-light-green rounded-md shadow-lg ${
+                className={`w-11/12 mx-5 mt-2 flex items-center bg-light-green rounded-md shadow-lg text-light-black font-semibold ${
                     !isAddFrogClicked ? "hidden" : ""
                 }`}
             >
                 <input
                     type="text"
-                    className="w-10/12 h-full px-2 py-3 rounded-md bg-light-green"
+                    className="w-10/12 h-full px-2 py-3 rounded-md bg-light-green placeholder-light-black"
                     placeholder={`What do you want to focus on?`}
                     onChange={handleInputFrogChange}
                 />
@@ -68,7 +68,7 @@ const Frog = () => {
                 </button>
             </form>
             <div
-                className={`w-11/12 mx-5 mt-2 px-2 py-3 flex items-center justify-between bg-light-green text-lg rounded-md shadow-xl ${
+                className={`w-11/12 mx-5 mt-2 px-2 py-3 flex items-center justify-between bg-light-green text-lg rounded-md shadow-xl text-light-black font-semibold ${
                     !isAddFrogClicked && isFrogExist ? "" : "hidden"
                 }`}
             >
