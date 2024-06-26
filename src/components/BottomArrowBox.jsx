@@ -1,4 +1,4 @@
-import BottomArrowIcon from "./components/icons/BottomArrowIcon";
+import BottomArrowIcon from "./icons/BottomArrowIcon";
 
 const BottomArrowBox = () => {
     return (
