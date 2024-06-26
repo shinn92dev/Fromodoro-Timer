@@ -11,6 +11,7 @@ const Timer = ({ totalMinute }) => {
     useEffect(() => {
         setTimeLeft(totalMinute * 60);
         setElapsed(0);
+        setIsRunning(false);
     }, [totalMinute]);
     useEffect(() => {
         const canvas = canvasRef.current;
