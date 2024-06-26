@@ -74,7 +74,7 @@ const Timer = ({ totalMinute }) => {
         <div className="flex flex-col items-center w-full">
             <div
                 ref={containerRef}
-                className="relative bg-gray-500 rounded-full w-9/12 aspect-square flex justify-center items-center shadow-2xl"
+                className="relative bg-white rounded-full w-9/12 aspect-square flex justify-center items-center shadow-2xl"
             >
                 <canvas ref={canvasRef} className="absolute" />
                 <span className="font-black text-7xl z-10">
@@ -83,7 +83,7 @@ const Timer = ({ totalMinute }) => {
             </div>
             <button
                 onClick={handleStartPause}
-                className="w-5/12 text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 rounded-lg text-xl font-black px-5 py-2.5 text-center my-7"
+                className="w-5/12 bg-btn-green text-white rounded-lg text-xl font-black px-5 py-2.5 text-center my-7"
             >
                 {isRunning ? "PAUSE" : "START"}
             </button>

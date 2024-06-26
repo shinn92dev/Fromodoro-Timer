@@ -9,9 +9,9 @@ const Header = () => {
         return;
     };
     return (
-        <header className="flex justify-between py-2 bg-green-300">
+        <header className="flex justify-between py-2 bg-green">
             <div className="title-box flex items-center">
-                <div className="w-7 h-7 mx-2 bg-red-500" id="header-logo"></div>
+                <div className="w-7 h-7 mx-2 bg-white" id="header-logo"></div>
                 <div>
                     <h1 className="text-2xl font-black">Fromodoro</h1>
                 </div>
