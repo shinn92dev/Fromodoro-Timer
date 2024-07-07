@@ -5,6 +5,7 @@ import Timer from "./components/Timer";
 import Frog from "./components/Frog";
 import BottomArrowBox from "./components/BottomArrowBox";
 import { useState } from "react";
+import Setting from "./components/Setting";
 
 const App = () => {
     const [totalTime, setTotalTime] = useState(25);
@@ -23,6 +24,7 @@ const App = () => {
             <div className="">
                 <Header />
                 <main>
+                    <Setting />
                     <TopBtnBox onClick={handleTopBtnClick} />
                     <Timer totalMinute={totalTime} />
                     <Frog />
