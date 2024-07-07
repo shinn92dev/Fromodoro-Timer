@@ -1,4 +1,4 @@
-const Setting = () => {
+const Setting = ({ offSetting }) => {
     return (
         <div className=" overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center shadow-xl">
             <div className="relative w-full max-w-2xl px-4 h-full md:h-auto">
@@ -11,6 +11,7 @@ const Setting = () => {
                             type="button"
                             className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
                             data-modal-toggle="default-modal"
+                            onClick={offSetting}
                         >
                             <svg
                                 className="w-5 h-5"

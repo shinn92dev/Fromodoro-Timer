@@ -3,7 +3,7 @@ import HamburgerIcon from "./icons/HamburgerIcon";
 import Setting from "./icons/SettingIcon";
 import UserIcon from "./icons/UserIcon";
 
-const Header = () => {
+const Header = ({ toggleSetting }) => {
     const onClick = () => {
         console.log("Clicked");
         return;
@@ -21,7 +21,7 @@ const Header = () => {
                     width={7}
                     height={7}
                     Icon={Setting}
-                    onClick={onClick}
+                    onClick={toggleSetting}
                 />
                 <IconBtn
                     width={7}
